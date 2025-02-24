@@ -9,7 +9,7 @@ Original file is located at
 
 import requests
 
-url = "https://drive.google.com/uc?id=17tPbN2_7ZyBriedo7gHEB2KEYPE90rRs&export=download"
+url = "https://drive.google.com/uc?id=1mJQGU90goT8sHdn5Yo_6_xxR8QmICTj_&export=download"
 response = requests.get(url)
 with open("output_file.ext", "wb") as f:
     f.write(response.content)
@@ -22,7 +22,7 @@ from PIL import Image
 # Fungsi untuk memuat model (gantilah 'model_path' dengan path model Anda)
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model('modelVGG16ep24.h5')
+    model = tf.keras.models.load_model('VGG16Terbaru.h5')
     return model
 
 # Memuat model
