@@ -6,7 +6,7 @@ from PIL import Image
 # Fungsi untuk memuat model (gantilah 'model_path' dengan path model Anda)
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model('modelVGG16ep24.h5')  # Ganti dengan path model Anda
+    model = tf.keras.models.load_model('VGG16Terbaru.h5')  # Ganti dengan path model Anda
     return model
 
 # Memuat model
